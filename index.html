@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dipraj Misal | Frontend Engineer</title>
+    <meta name="description" content="Portfolio of Dipraj Misal, a Frontend Engineer specializing in building premium, interactive, and high-performance web applications using modern web technologies.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for Interactive Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Glowing Orbs Background Decoration -->
+    <div class="glowing-orb orb-1"></div>
+    <div class="glowing-orb orb-2"></div>
+
+    <!-- Header / Navigation -->
+    <header id="site-header">
+        <div class="header-container">
+            <a href="#hero" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Dipraj<span class="logo-accent">.Dev /&gt;</span>
+            </a>
+            
+            <nav id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active" id="link-hero">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                    <li><a href="#experience" class="nav-link" id="link-experience">Experience</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-sm btn-outline" id="header-cta">Hire Me</a>
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge" id="hero-badge">Available for freelance & full-time roles</div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Dipraj Misal</span><br>
+                        I build <span id="typing-text" class="accent-text"></span><span class="typed-cursor">|</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        A Frontend Engineer currently learning and building modern web applications. I design and build highly performant, premium interfaces with elegant user experiences and clean code.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary" id="hero-cta-projects">Explore Projects</a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">Let's Connect</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow"></div>
+                        <img src="assets/images/avatar.png" alt="Dipraj Misal Portrait" class="avatar-image" id="hero-avatar">
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Know Me Better</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info glass-card">
+                        <h3>Who I Am</h3>
+                        <p>I am a passionate frontend engineer based in Jalna, Maharashtra, India. I have 2 years of experience crafting layouts, polishing web design elements, and translating UX prototypes into responsive interfaces.</p>
+                        <p>Currently, I am expanding my skills in modern frontend engineering, building modular code architectures, and incorporating subtle animations to elevate the user experience. I enjoy continuous learning and experimenting with new Web technologies.</p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Years Exp</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-details glass-card">
+                        <h3>Core Philosophy</h3>
+                        <ul class="philosophy-list">
+                            <li>
+                                <div class="phi-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                </div>
+                                <div class="phi-content">
+                                    <h4>Scalable Architecture</h4>
+                                    <p>Building codebases that grow seamlessly with business demands.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="phi-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+                                </div>
+                                <div class="phi-content">
+                                    <h4>Pixel-Perfect UI/UX</h4>
+                                    <p>Crafting stunning visual layouts that look premium and function flawlessly.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="phi-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                </div>
+                                <div class="phi-content">
+                                    <h4>Speed & Performance</h4>
+                                    <p>Optimizing load times and runtime execution for fluid operation.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Arsenal</span>
+                    <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Frontend Skills Card -->
+                    <div class="skills-card glass-card">
+                        <div class="card-glow"></div>
+                        <div class="skills-card-header">
+                            <div class="skills-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 9 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="9"></line></svg>
+                            </div>
+                            <h3>Frontend UI</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>React / Next.js</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>TypeScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>HTML5 / Modern CSS</span>
+                                    <span>98%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 98%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>Tailwind CSS</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 95%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills Card -->
+                    <div class="skills-card glass-card">
+                        <div class="card-glow"></div>
+                        <div class="skills-card-header">
+                            <div class="skills-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                            </div>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>Node.js / Express</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>Python / Django</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>PostgreSQL / MongoDB</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>GraphQL & REST APIs</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 92%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Tools Skills Card -->
+                    <div class="skills-card glass-card">
+                        <div class="card-glow"></div>
+                        <div class="skills-card-header">
+                            <div class="skills-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                            </div>
+                            <h3>DevOps & Design</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>Docker / Kubernetes</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>AWS (S3, EC2, Lambda)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>Git / CI-CD Pipelines</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 92%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-percent">
+                                    <span>Figma / UI Design</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Works</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all" id="btn-filter-all">All</button>
+                    <button class="filter-btn" data-filter="frontend" id="btn-filter-frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="fullstack" id="btn-filter-fullstack">Fullstack</button>
+                    <button class="filter-btn" data-filter="ai" id="btn-filter-ai">AI / SaaS</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card" data-category="fullstack ai" id="project-card-1">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/project1.png" alt="Aether Analytics Dashboard Mockup" class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Source Code">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="#" class="project-link-icon" aria-label="Visit Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">AI / SaaS / Node</span>
+                            <h3 class="project-title">Aether Analytics</h3>
+                            <p class="project-description">A real-time AI-powered SaaS analytics dashboard featuring interactive charts, predictive analytics modeling, and modular data widgets.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">ChartJS</span>
+                                <span class="tech-tag">TensorFlow.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card" data-category="frontend fullstack" id="project-card-2">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/project2.png" alt="FinFlow SaaS Dashboard Mockup" class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Source Code">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="#" class="project-link-icon" aria-label="Visit Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Finance / Analytics</span>
+                            <h3 class="project-title">FinFlow Portal</h3>
+                            <p class="project-description">A secure financial dashboard enabling users to track revenue operations, forecast cash flows, and manage subscriptions with rich visual graphics.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Tailwind</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card" data-category="frontend" id="project-card-3">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/project3.png" alt="NexusEdit Collaborative Editor Mockup" class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Source Code">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="#" class="project-link-icon" aria-label="Visit Live Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Developer Tools / WebSockets</span>
+                            <h3 class="project-title">NexusEdit Collaborative IDE</h3>
+                            <p class="project-description">A rich, web-based visual code editor with syntax highlighting, an integrated virtual file tree, and real-time collaboration tools.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Monaco Editor</span>
+                                <span class="tech-tag">Yjs</span>
+                                <span class="tech-tag">WebSockets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Career Journey</span>
+                    <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                </div>
+
+                <!-- Timeline -->
+                <div class="timeline">
+                    <!-- Timeline Line -->
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025 - Present</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role-title">Junior Frontend Developer</h3>
+                            <h4 class="company-name">NovaTech Solutions</h4>
+                            <p class="role-description">Developing interactive, responsive layouts using React, Tailwind CSS, and TypeScript. Collaborating with UI architects to refine accessibility, layout aesthetics, and styles.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - 2025</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role-title">Associate Web Developer</h3>
+                            <h4 class="company-name">Quantum Cloud Systems</h4>
+                            <p class="role-description">Assisted in crafting responsive web pages, testing UI layouts across browsers, and debugging HTML/CSS interface components.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - 2024</div>
+                        <div class="timeline-content glass-card">
+                            <h3 class="role-title">Self-Taught & Learning</h3>
+                            <h4 class="company-name">Frontend Specialization</h4>
+                            <p class="role-description">Completed extensive training in Javascript algorithms, responsive layout structures, CSS flexbox/grids, and Git version control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">Get In Touch</span>
+                    <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <h3>Connect With Me</h3>
+                        <p>Have a project in mind, or want to discuss a potential partnership? Drop me a message and let's bring your ideas to life.</p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span>Email Me</span>
+                                    <a href="mailto:misaldipraj22@gmail.com">misaldipraj22@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span>Location</span>
+                                    <span>Jalna, Maharashtra</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-wrapper">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <input type="text" id="form-name" class="form-control" placeholder="John Doe" required>
+                                <span class="error-msg" id="error-name">Please enter your name</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <input type="email" id="form-email" class="form-control" placeholder="john@example.com" required>
+                                <span class="error-msg" id="error-email">Please enter a valid email address</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <input type="text" id="form-subject" class="form-control" placeholder="Project Inquiry" required>
+                                <span class="error-msg" id="error-subject">Please enter a subject</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Message</label>
+                                <textarea id="form-message" class="form-control" rows="5" placeholder="Tell me about your project..." required></textarea>
+                                <span class="error-msg" id="error-message">Please write your message</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit">
+                                <span>Send Message</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="send-icon"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </form>
+                        
+                        <!-- Success Message (hidden by default) -->
+                        <div class="form-success-container" id="form-success">
+                            <div class="success-icon-wrapper">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you for reaching out, <span id="success-user-name">John</span>. I have received your message and will get back to you within 24 hours.</p>
+                            <button class="btn btn-outline btn-sm" id="btn-success-reset">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-accent">&lt;</span>Dipraj<span class="logo-accent">.Dev /&gt;</span>
+                </a>
+                <p>Designing digital experiences that blend aesthetic beauty with modern frontend engineering principles.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dipraj Misal. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#hero">Privacy Policy</a>
+                    <a href="#hero">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
